@@ -35,6 +35,8 @@ namespace HospedagemDaTiaLia
             this.tsmCadHospede = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCadFunc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNovoHospede = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmNovoFuncionario = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,12 +69,16 @@ namespace HospedagemDaTiaLia
             // 
             // tsmCadHospede
             // 
+            this.tsmCadHospede.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmNovoHospede});
             this.tsmCadHospede.Name = "tsmCadHospede";
             this.tsmCadHospede.Size = new System.Drawing.Size(132, 20);
             this.tsmCadHospede.Text = "Cadastro de Hospede";
             // 
             // tsmCadFunc
             // 
+            this.tsmCadFunc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmNovoFuncionario});
             this.tsmCadFunc.Name = "tsmCadFunc";
             this.tsmCadFunc.Size = new System.Drawing.Size(148, 20);
             this.tsmCadFunc.Text = "Cadastro de Funcionário";
@@ -87,6 +93,18 @@ namespace HospedagemDaTiaLia
             this.tsmSair.Size = new System.Drawing.Size(38, 20);
             this.tsmSair.Text = "Sair";
             this.tsmSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // tsmNovoHospede
+            // 
+            this.tsmNovoHospede.Name = "tsmNovoHospede";
+            this.tsmNovoHospede.Size = new System.Drawing.Size(153, 22);
+            this.tsmNovoHospede.Text = "Novo Hospede";
+            // 
+            // tsmNovoFuncionario
+            // 
+            this.tsmNovoFuncionario.Name = "tsmNovoFuncionario";
+            this.tsmNovoFuncionario.Size = new System.Drawing.Size(169, 22);
+            this.tsmNovoFuncionario.Text = "Novo Funcionario";
             // 
             // FrmHome
             // 
@@ -117,6 +135,8 @@ namespace HospedagemDaTiaLia
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem tsmSair;
         private System.Windows.Forms.ToolStripMenuItem tsmNovoCadastro;
+        private System.Windows.Forms.ToolStripMenuItem tsmNovoHospede;
+        private System.Windows.Forms.ToolStripMenuItem tsmNovoFuncionario;
     }
 }
 
