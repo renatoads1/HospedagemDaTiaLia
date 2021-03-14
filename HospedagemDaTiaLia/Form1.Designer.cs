@@ -33,10 +33,10 @@ namespace HospedagemDaTiaLia
             this.tsmCadQuarto = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmNovoCadastro = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmCadHospede = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmCadFunc = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSair = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmNovoHospede = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmCadFunc = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmNovoFuncionario = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmSair = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +52,7 @@ namespace HospedagemDaTiaLia
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.Click += new System.EventHandler(this.tsmsair);
             // 
             // tsmCadQuarto
             // 
@@ -75,6 +76,12 @@ namespace HospedagemDaTiaLia
             this.tsmCadHospede.Size = new System.Drawing.Size(132, 20);
             this.tsmCadHospede.Text = "Cadastro de Hospede";
             // 
+            // tsmNovoHospede
+            // 
+            this.tsmNovoHospede.Name = "tsmNovoHospede";
+            this.tsmNovoHospede.Size = new System.Drawing.Size(153, 22);
+            this.tsmNovoHospede.Text = "Novo Hospede";
+            // 
             // tsmCadFunc
             // 
             this.tsmCadFunc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,6 +89,12 @@ namespace HospedagemDaTiaLia
             this.tsmCadFunc.Name = "tsmCadFunc";
             this.tsmCadFunc.Size = new System.Drawing.Size(148, 20);
             this.tsmCadFunc.Text = "Cadastro de Funcionário";
+            // 
+            // tsmNovoFuncionario
+            // 
+            this.tsmNovoFuncionario.Name = "tsmNovoFuncionario";
+            this.tsmNovoFuncionario.Size = new System.Drawing.Size(169, 22);
+            this.tsmNovoFuncionario.Text = "Novo Funcionario";
             // 
             // tsmSair
             // 
@@ -93,18 +106,6 @@ namespace HospedagemDaTiaLia
             this.tsmSair.Size = new System.Drawing.Size(38, 20);
             this.tsmSair.Text = "Sair";
             this.tsmSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // tsmNovoHospede
-            // 
-            this.tsmNovoHospede.Name = "tsmNovoHospede";
-            this.tsmNovoHospede.Size = new System.Drawing.Size(153, 22);
-            this.tsmNovoHospede.Text = "Novo Hospede";
-            // 
-            // tsmNovoFuncionario
-            // 
-            this.tsmNovoFuncionario.Name = "tsmNovoFuncionario";
-            this.tsmNovoFuncionario.Size = new System.Drawing.Size(169, 22);
-            this.tsmNovoFuncionario.Text = "Novo Funcionario";
             // 
             // FrmHome
             // 

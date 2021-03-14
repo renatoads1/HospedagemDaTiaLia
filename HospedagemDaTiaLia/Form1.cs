@@ -22,5 +22,10 @@ namespace HospedagemDaTiaLia
 
         }
 
+        private void tsmsair(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
