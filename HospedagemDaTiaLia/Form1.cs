@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HospedagemDaTiaLia
 {
-    public partial class Form1 : Form
+    public partial class FrmHome : Form
     {
-        public Form1()
+        public FrmHome()
         {
             InitializeComponent();
+        }
+
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
+
         }
 
     }
