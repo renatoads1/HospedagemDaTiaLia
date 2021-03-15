@@ -29,83 +29,53 @@ namespace HospedagemDaTiaLia
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.tsmCadQuarto = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNovoCadastro = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmCadHospede = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNovoHospede = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmCadFunc = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmNovoFuncionario = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmSair = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // button1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmCadQuarto,
-            this.tsmCadHospede,
-            this.tsmCadFunc,
-            this.tsmSair});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.Click += new System.EventHandler(this.tsmsair);
+            this.button1.Location = new System.Drawing.Point(13, 13);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(139, 37);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Cadastrar Hospede";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // tsmCadQuarto
+            // button2
             // 
-            this.tsmCadQuarto.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmNovoCadastro});
-            this.tsmCadQuarto.Name = "tsmCadQuarto";
-            this.tsmCadQuarto.Size = new System.Drawing.Size(122, 20);
-            this.tsmCadQuarto.Text = "Cadastro de Quarto";
+            this.button2.Location = new System.Drawing.Point(158, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 37);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Cadastrar Reserva";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // tsmNovoCadastro
+            // button3
             // 
-            this.tsmNovoCadastro.Name = "tsmNovoCadastro";
-            this.tsmNovoCadastro.Size = new System.Drawing.Size(153, 22);
-            this.tsmNovoCadastro.Text = "Novo Cadastro";
+            this.button3.Location = new System.Drawing.Point(303, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(139, 37);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Lançar saida";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // tsmCadHospede
+            // button4
             // 
-            this.tsmCadHospede.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmNovoHospede});
-            this.tsmCadHospede.Name = "tsmCadHospede";
-            this.tsmCadHospede.Size = new System.Drawing.Size(132, 20);
-            this.tsmCadHospede.Text = "Cadastro de Hospede";
-            // 
-            // tsmNovoHospede
-            // 
-            this.tsmNovoHospede.Name = "tsmNovoHospede";
-            this.tsmNovoHospede.Size = new System.Drawing.Size(153, 22);
-            this.tsmNovoHospede.Text = "Novo Hospede";
-            // 
-            // tsmCadFunc
-            // 
-            this.tsmCadFunc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsmNovoFuncionario});
-            this.tsmCadFunc.Name = "tsmCadFunc";
-            this.tsmCadFunc.Size = new System.Drawing.Size(148, 20);
-            this.tsmCadFunc.Text = "Cadastro de Funcionário";
-            // 
-            // tsmNovoFuncionario
-            // 
-            this.tsmNovoFuncionario.Name = "tsmNovoFuncionario";
-            this.tsmNovoFuncionario.Size = new System.Drawing.Size(169, 22);
-            this.tsmNovoFuncionario.Text = "Novo Funcionario";
-            // 
-            // tsmSair
-            // 
-            this.tsmSair.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsmSair.BackColor = System.Drawing.Color.Red;
-            this.tsmSair.CheckOnClick = true;
-            this.tsmSair.Name = "tsmSair";
-            this.tsmSair.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.tsmSair.Size = new System.Drawing.Size(38, 20);
-            this.tsmSair.Text = "Sair";
-            this.tsmSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button4.Location = new System.Drawing.Point(752, 13);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(36, 37);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "X";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // FrmHome
             // 
@@ -113,31 +83,26 @@ namespace HospedagemDaTiaLia
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hospedagem Da Tia Lia";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmHome_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem tsmCadQuarto;
-        private System.Windows.Forms.ToolStripMenuItem tsmCadHospede;
-        private System.Windows.Forms.ToolStripMenuItem tsmCadFunc;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem tsmSair;
-        private System.Windows.Forms.ToolStripMenuItem tsmNovoCadastro;
-        private System.Windows.Forms.ToolStripMenuItem tsmNovoHospede;
-        private System.Windows.Forms.ToolStripMenuItem tsmNovoFuncionario;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
