@@ -1,4 +1,4 @@
-﻿namespace HospedagemDaTiaLia.Data
+﻿namespace HospedagemDaTiaLia.Models
 {
     class Hospede
     {

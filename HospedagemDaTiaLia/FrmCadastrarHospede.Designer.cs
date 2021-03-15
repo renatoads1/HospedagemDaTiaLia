@@ -381,7 +381,7 @@ namespace HospedagemDaTiaLia
             this.Controls.Add(this.button4);
             this.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "FrmCadastrarHospede";
-            this.Text = "Cadastro de Hospede";
+            this.Text = ",";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmCadastrarHospede_Load);
             this.ResumeLayout(false);
