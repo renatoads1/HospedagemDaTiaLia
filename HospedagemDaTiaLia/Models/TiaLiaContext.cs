@@ -5,6 +5,7 @@ namespace HospedagemDaTiaLia.Models
 {
     class TiaLiaContext : DbContext
     {
+
         protected override void OnConfiguring(DbContextOptionsBuilder opt)
         {
             opt.UseSqlite("Data Source=tialia.db");

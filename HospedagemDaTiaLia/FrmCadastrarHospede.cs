@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using HospedagemDaTiaLia.Models;
+using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace HospedagemDaTiaLia
 {
     public partial class FrmCadastrarHospede : Form
     {
+
+        static TiaLiaContext tldb = new TiaLiaContext();
+
         public FrmCadastrarHospede()
         {
             InitializeComponent();
@@ -27,6 +27,41 @@ namespace HospedagemDaTiaLia
 
         private void FrmCadastrarHospede_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnGravaHospede_Click(object sender, EventArgs e)
+        {
+            var conta = tldb.Hospede.Count();
+            conta++;
+            try
+            {
+                var hospedes = new Hospede()
+                {
+                    Id = conta,
+                    Nome = tbNome.Text.ToString(),
+                    Sobrenome = tbSobrenome.Text.ToString(),
+                    DataNasc = tbData.Text.ToString(),
+                    Telefone = tbtelefone.Text.ToString(),
+                    Celular = tbCelular.Text.ToString(),
+                    Rg = tbRg.Text.ToString(),
+                    Cpf = tbCpf.Text.ToString(),
+                    Logadouro = tbRua.Text.ToString(),
+                    Numero = tbNumero.Text.ToString(),
+                    Complemento = tbComplemento.Text.ToString(),
+                    Bairro = tbBairro.Text.ToString(),
+                    Cidade = tbCidade.Text.ToString(),
+                    Estado = tbEstado.Text.ToString(),
+                    Empresa = tbEmpresa.Text.ToString()
+                };
+
+                tldb.Add(hospedes);
+                tldb.SaveChanges();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show("Erro" + er);
+            }
 
         }
     }
