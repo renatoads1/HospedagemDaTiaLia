@@ -1,11 +1,9 @@
-﻿using HospedagemDaTiaLia.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace HospedagemDaTiaLia.Models
 {
     class TiaLiaContext : DbContext
     {
-
         protected override void OnConfiguring(DbContextOptionsBuilder opt)
         {
             opt.UseSqlite("Data Source=tialia.db");

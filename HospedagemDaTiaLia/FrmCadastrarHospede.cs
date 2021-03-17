@@ -27,7 +27,7 @@ namespace HospedagemDaTiaLia
 
         private void FrmCadastrarHospede_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void btnGravaHospede_Click(object sender, EventArgs e)
@@ -57,6 +57,8 @@ namespace HospedagemDaTiaLia
 
                 tldb.Add(hospedes);
                 tldb.SaveChanges();
+                MessageBox.Show("Dados Gravados Com sucesso!!");
+                this.Close();
             }
             catch (Exception er)
             {
